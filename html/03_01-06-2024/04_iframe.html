@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        <frame> and <frameset> tag are dropped in html5.
+        now we use <iframe> = inline frame
+     -->
+     <iframe src="01_list.html" frameborder="10" height="300px" width="500px"></iframe> 
+
+     <br><br>
+     <!-- open multiple pages in one iframe using <a> tag -->
+    <h2>
+        <a href="02_list_example.html" target="myframe">Open List Example</a>
+
+        <a href="03_abbr.html" target="myframe">Show abbr Example</a>
+    </h2>
+    <iframe src="" name="myframe" frameborder="10" height="200px" width="300px"></iframe>
+
+
+     <!-- google map 
+        search location => share => embed map => copy iframe tag
+    -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7440.5629817129275!2d72.8225531595003!3d21.180973895600115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e69b0000001%3A0x889ddaa12034e9ed!2sNirmal%20Hospital%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1717216435375!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- youtube 
+        open video => share => embed => copy html
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uB5pZO95T7k?si=H5vk8daKU1dDGrzu"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
