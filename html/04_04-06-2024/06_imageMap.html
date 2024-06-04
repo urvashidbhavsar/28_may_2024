@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        image map => apply link on image shapes.
+        tag : <img> <area> and <map>
+
+        area => polygon, circle and rect
+     -->
+    <img src="image.jpg" alt="" usemap="#imageMap">
+    <!-- this tag apply par image only one -->
+    <!-- this is logical tags and depends on img tag -->
+    <map name="imageMap">
+        <area shape="rect" coords="618,139,754,341" href="01_marquee.html" alt="" target="_blank">
+
+        <!-- exctly center point of circle 
+             x1 =  465, y1 =  150 
+            end point of only x direction x2 = 530
+
+            r = x2 - x1 = 530 - 465 = 65
+
+            coords = x,y,r
+            -->
+        <area shape="circle" coords="465,150,65" href="https://jsonplaceholder.typicode.com/" alt="" target="_blank">
+
+        <area shape="poly" coords="467,307,567,306,600,364,566,425,472,427,434,367" href="image.jpg" alt=""
+            target="_blank">
+    </map>
+</body>
+
+</html>
