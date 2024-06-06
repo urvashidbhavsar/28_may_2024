@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- table is a collection of rows and columns.
+        a box generate from rows and columns its called cell. 
+
+        for table => <table>
+        for table row => <tr>
+        for table data/column => <td>
+        for table heading => <th>
+        for make saparate table body => <tbody>
+        for set saparate table heading  => <thead>
+        for give table title => <caption>
+        for set table footer => <tfoot>
+
+        cellpadding => allow space between text and cell borders.
+        cellspacing => allow space between cells.
+        when we set rules cellspacing not effected.
+
+    -->
+    <table border="1" style="width:300px; text-align: center;" cellpadding="5px" cellspacing="4px" rules="all">
+        <caption>User Data</caption>
+        <!-- 1st row -->
+        <thead id="title">
+            <tr>
+                <th>Sr. No</th>
+                <th>Roll no</th>
+                <th>Name</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            <tr>
+                <td>1</td>
+                <td>1001</td>
+                <td>Divya</td>
+                <td>Red</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1002</td>
+                <td>Mohan</td>
+                <td>Green</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1003</td>
+                <td>Nitin</td>
+                <td>Yellow</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td>Total data : 3</td>
+            </tr>
+        </tfoot> -->
+    </table>
+</body>
+
+</html>
