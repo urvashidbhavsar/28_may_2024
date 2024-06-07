@@ -1,0 +1,19 @@
+as per layout 2 type tag : 
+
+(1) sementic tag : 
+it means tag show meaning.
+<p>, <b>, <video> 
+
+(2) non-sementic tag 
+which cant tell about them 
+<div>(block tag) <span> (inline tag)
+
+tags are used to create layout : 
+<header> 
+<footer> 
+<section>
+<aside>
+<article> 
+<main> 
+<nav> 
+<div> 
