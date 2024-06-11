@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">City: </label>
+        <!-- for multiple selection => multiple size="6" 
+            for selection hold ctrl + mouse click 
+        -->
+        <select name="" id="">
+            <option value="">---select---</option>
+            <optgroup label="South City">
+                <option value="">Surat</option>
+                <option value="">Navsari</option>
+                <option value="">Baroda</option>
+                <option value="">Vapi</option>
+                <option value="">Bharuch</option>
+            </optgroup>
+            <optgroup label="North City">
+                <option value="">Mahesana</option>
+                <option value="">Balasinor</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!-- datalist tag not a physical tag. it is dependent. it shows suggessions -->
+        Search : <input type="search" name="" id="" list="mylist">
+        <datalist id="mylist">
+            <option value="Accessories"></option>
+            <option value="Cloth"></option>
+            <option value="footwear"></option>
+            <option value="Jewellery"></option>
+            <option value="tools"></option>
+        </datalist>
+    </form>
+</body>
+
+</html>
