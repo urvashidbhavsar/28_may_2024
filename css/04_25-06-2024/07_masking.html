@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 500px;
+            width: 500px;
+
+            mask-image: url(image/mask.png);
+            mask-repeat: no-repeat;
+            mask-size: cover;
+            mask-position: center;
+            mask-type: alpha;
+        }
+
+        img {
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <img src="https://wallpapers.com/images/featured/image-79gc4p3mqu7an848.jpg" alt="">
+    </div>
+</body>
+
+</html>

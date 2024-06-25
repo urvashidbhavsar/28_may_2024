@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 300px;
+            border: 10px dashed black;
+            background-color: teal;
+            color: white;
+            padding: 20px;
+
+            /* use to set background paint area */
+            /* background-clip: border-box; => default  */
+            /* background-clip: padding-box; */
+            background-clip: content-box;
+        }
+
+        .mydiv {
+            background: url(https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet saepe rem. Quia sint pariatur optio.
+        Exercitationem voluptatum in perspiciatis aliquam unde tenetur quod? Illum accusantium veritatis ipsum
+        aspernatur aperiam.
+    </div>
+
+    <div class="mydiv">
+        <h1>Hello world</h1>
+    </div>
+</body>
+
+</html>
