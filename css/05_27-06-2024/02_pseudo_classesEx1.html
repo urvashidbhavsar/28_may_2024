@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes are start with : sign */
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* applies on link */
+        .link1:any-link {
+            color: brown
+        }
+
+        .link2:visited {
+            color: green;
+        }
+
+        /* applies on button or a tag */
+        .link3:active {
+            color: magenta;
+        }
+
+        /* applies on button, a or div */
+        .link4:hover {
+            color: maroon;
+        }
+
+        button {
+            padding: 10px 30px;
+            border: 2px solid darkcyan;
+            background-color: transparent;
+            color: darkcyan;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+            color: white;
+            /* border: 2px solid darkcyan; */
+        }
+
+        button:active {
+            padding: 8px 25px;
+        }
+
+        input {
+            border: 1px solid gray;
+            padding: 2px 10px;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        input:focus {
+            box-shadow: 0 0 2px 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" class="link1">click here</a> <br>
+    <a href="" class="link2">click here</a> <br>
+    <a href="" class="link3">click here</a> <br>
+    <a href="" class="link4">click here</a> <br> <br>
+
+    <button>Click here to download</button> <br><br>
+
+    <input type="text" name="" id="" placeholder="enter value">
+</body>
+
+</html>

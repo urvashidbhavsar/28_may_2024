@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,
+        th {
+            padding: 5px;
+        }
+
+        table {
+            /* border-collapse: separate; => default  */
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: blue;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightcoral;
+        }
+
+        tr:first-child {
+            background-color: black;
+        }
+
+        tr:last-child {}
+
+        tr:first-of-type {}
+
+        tr:last-of-type {}
+
+        .box:nth-child(1) {
+            color: green;
+        }
+
+        .box:nth-child(2) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Field</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>789</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>789</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>789</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Abc</td>
+            <td>789</td>
+            <td>IT</td>
+        </tr>
+    </table>
+
+    <div>
+        <div class="box">this is div element</div>
+        <div class="box">this is div element</div>
+        <div class="box">this is div element</div>
+        <div class="box">this is div element</div>
+        <div class="box">this is div element</div>
+    </div>
+</body>
+
+</html>
