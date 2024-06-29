@@ -1,0 +1,7 @@
+1. descendent selector => use space between class, id or element
+
+2. child selector => use > sign.
+
+3. adjacent selector => use + sign
+
+4. sibling selector => use ~ sign.
