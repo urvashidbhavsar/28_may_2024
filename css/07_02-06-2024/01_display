@@ -1,0 +1,13 @@
+display how to show your element.
+
+values :
+
+none, 
+block(default), 
+inline, 
+inline-block, 
+flex, 
+inline-flex, 
+grid, 
+inline-grid, 
+table etc
