@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* set complusory */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mukta", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========================== */
+header {
+    background-color: rgb(2, 84, 150);
+}
+
+.container {
+    margin-left : 50px;
+    margin-right: 50px;
+}
+
+.navbar {
+    padding-top   : 15px;
+    padding-bottom: 15px;
+    display       : flex;
+    align-items   : center;
+}
+
+.navbar .logo {
+    flex: 1;
+}
+
+.navbar .logo h1 {
+    font-weight: 100;
+    color      : white;
+}
+
+.navbar .logo h1 span {
+    font-weight: 900;
+    position   : relative;
+}
+
+.navbar .logo h1 span i {
+    position : absolute;
+    font-size: 16px;
+    right    : -20px;
+    color    : orangered;
+}
+
+.navbar .nav {
+    flex           : 3;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.navbar .nav ul {
+    display: flex;
+    gap    : 30px;
+}
+
+.navbar .nav ul a {
+    color    : white;
+    font-size: 19px;
+}
+
+.navbar .nav ul a:hover {
+    color: orangered;
+}
+
+.navbar .nav .btn {
+    padding         : 7px 25px;
+    border          : 2px solid white;
+    border-radius   : 40px;
+    background-color: transparent;
+    color           : white;
+    font-size       : 16px;
+}
+
+.navbar .nav .btn:hover {
+    border: 2px solid orangered;
+    color : orangered;
+}
+
+.navbar .social-media {
+    flex           : 1;
+    display        : flex;
+    justify-content: end;
+    gap            : 5px;
+}
+
+.navbar .social-media .icon {
+    height         : 35px;
+    width          : 35px;
+    border         : 1px solid white;
+    border-radius  : 50%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.navbar .social-media .icon a {
+    color: white;
+}
