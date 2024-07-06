@@ -1,0 +1,77 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+}
+
+.main .sidebar {
+    width           : 25%;
+    background-color: lightcyan;
+    padding         : 20px;
+    height          : 600px;
+    position        : fixed;
+    overflow        : auto;
+}
+
+.main .sidebar .user {
+    padding-top: 30px;
+    text-align : center;
+}
+
+.main .sidebar .user img {
+    height       : 100px;
+    width        : 100px;
+    border-radius: 50%;
+}
+
+.main .sidebar h1 {
+    font-size     : 30px;
+    text-align    : center;
+    padding-top   : 15px;
+    padding-bottom: 5px;
+}
+
+.main .sidebar .post {
+    text-align: center;
+}
+
+.main .sidebar .post a {
+    color: blue;
+}
+
+.main .sidebar ul {
+    list-style-type: none;
+    text-align     : center;
+    margin-top     : 30px;
+}
+
+.main .sidebar ul li {
+    padding-bottom: 12px;
+}
+
+.main .sidebar ul li a {
+    color: blue;
+}
+
+.main .mainContent {
+    width: 75%;
+}
+
+.main .blankdiv {
+    width: 25%;
+}
+
+.main .mainContent img {
+    width: 100%;
+}

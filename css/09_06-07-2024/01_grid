@@ -1,0 +1,34 @@
+display grid show data in a tablular form.
+=> apply in parent element
+
+list of property which is only effected while apply grid.
+
+1. grid-template-rows (parent)
+2. grid-template-columns (parent)
+
+3. grid-row-start (child)
+4. grid-row-end (child)
+5. grid-row (child)
+
+6. grid-column-start (child)
+7. grid-column-end (child)
+8. grid-column (child)
+
+9. row-gap (parent)
+10. column-gap (parent)
+11. gap (parent)
+
+12. justify-content (parent)
+13. justify-items (parent)
+14. justify-self (child)
+
+15. align-content (parent)
+16. align-items (parent)
+17. align-self (child)
+
+18. grid-area (child)
+19. grid-template-areas (parent)
+
+20. grid-auto-flow (parent)
+21. grid-auto-rows (parent)
+22. grid-auto-columns (parent)
