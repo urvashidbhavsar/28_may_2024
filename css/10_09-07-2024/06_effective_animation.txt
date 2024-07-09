@@ -1,0 +1,34 @@
+(1) transition 
+= use to move smooth.
+
+(2) transform 
+= how to transform/show your element 
+there are functions used to set element transformation.
+1. rotate 
+    rotate(), rotateX(), rotateY(), rotateZ(), rotate3d()
+    property : rotate 
+
+2. scale 
+    scale(), scaleX(), scaleY(), scaleZ(), scale3d()
+    property : scale 
+
+3. skew 
+    skew(), skewX(), skewY()
+
+4. translate 
+    translate(), translateX(), translateY(), translateZ(), translate3d()
+    property : translate 
+
+5. perspective 
+    perspective()
+    property : perspective
+
+6. matrix 
+    matrix(), matrix3d()
+
+(3) animation 
+= set animation
+
+using @keyframes rule we can create animation.
+
+https://ramlmn.github.io/visualizing-matrix3d/

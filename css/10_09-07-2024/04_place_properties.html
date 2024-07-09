@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mydiv {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: auto;
+            display: grid;
+
+            /* shorthand of justify-content and align-content */
+            /* place-content: flex-end flex-start; */
+
+            /* shorthand of justify-items and align-items */
+            /* place-items: center; */
+        }
+
+        p {
+            font-size: 25px;
+            /* shorthand of justify-self and align-self */
+            place-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <p>Hello</p>
+    </div>
+</body>
+
+</html>
