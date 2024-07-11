@@ -14,18 +14,14 @@ there are functions used to set element transformation.
 
 3. skew 
     skew(), skewX(), skewY()
-
 4. translate 
     translate(), translateX(), translateY(), translateZ(), translate3d()
     property : translate 
-
 5. perspective 
     perspective()
     property : perspective
-
 6. matrix 
     matrix(), matrix3d()
-
 (3) animation 
 = set animation
 
