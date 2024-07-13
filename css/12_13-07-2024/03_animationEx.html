@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setup {
+            height: 100px;
+            width: 300px;
+            margin: auto;
+        }
+
+        .rect {
+            height: 30px;
+            width: 300px;
+            border: 2px solid indigo;
+            border-radius: 40px;
+            padding: 2px;
+        }
+
+        .move {
+            height: 30px;
+            width: 50px;
+            background-color: indigo;
+            border-radius: 40px;
+            animation: dotmove 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+        }
+
+        @keyframes dotmove {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(80px);
+            }
+
+            75% {
+                transform: translateX(160px);
+            }
+
+            100% {
+                transform: translateX(250px);
+            }
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: rgb(6, 92, 177);
+            color: white;
+            border: 2px solid rgb(6, 92, 177);
+            font-size: 16px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 6px 2px rgb(172, 171, 171);
+        }
+
+        .btn:hover {
+            animation: jump 0.5s ease infinite alternate;
+        }
+
+        .btns {
+            width: 200px;
+            text-align: center;
+        }
+
+        .shadow {
+            height: 40px;
+            width: 140px;
+            margin: auto;
+            background-color: rgb(172, 171, 171);
+            border-radius: 50%;
+            transform: rotateX(80deg) translateY(-60px);
+        }
+
+        .btns:hover .shadow {
+            animation: shadow 0.5s ease infinite alternate;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes shadow {
+            0% {
+                scale: 1;
+                opacity: 0.3;
+            }
+
+            100% {
+                scale: 0.3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setup">
+        <div class="rect">
+            <div class="move"></div>
+        </div>
+    </div>
+
+    <div class="btns">
+        <button class="btn">Read More </button>
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>
