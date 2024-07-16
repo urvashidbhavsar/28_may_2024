@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .div1,
+        .div2 {
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 35px;
+            margin: 10px;
+        }
+
+        /* .hr {
+            height: 3px;
+            width: 100%;
+            background-color: blue;
+        } */
+
+        .div1 h1::after {
+            content: "";
+            height: 4px;
+            width: 100%;
+            display: block;
+            background-color: blue;
+            width: 250px;
+            transition: 1s ease;
+        }
+
+        .div1:hover h1::after {
+            width: 400px;
+        }
+
+        .div2 {
+            transition: 0.5s ease;
+        }
+
+        .div2:hover {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1>About Us</h1>
+        <!-- <div class="hr"></div> -->
+    </div>
+
+    <div class="div2">
+        <h1>About Us</h1>
+        <!-- <div class="hr"></div> -->
+    </div>
+</body>
+
+</html>
