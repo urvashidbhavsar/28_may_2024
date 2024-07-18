@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 10px;
+        }
+
+        .overlay {
+            width: 500px;
+            border: 1px solid black;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .overlay .over-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: grid;
+            place-content: center;
+            /* transform: scale(0); */
+            transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+            /* transform-origin: top; */
+        }
+
+        .overlay:hover .over-text {
+            /* transform: scale(1); */
+            background-color: rgba(0, 0, 255, 0.6);
+        }
+
+        .over-text h3 {
+            transform: translateY(300px);
+            transition: 0.5s ease-in;
+        }
+
+        .overlay:hover h3 {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div>
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-two-elephants-are-standing-in-shallow-water-at-sunset-image_2951461.jpg"
+                alt="">
+        </div>
+        <div class="over-text">
+            <h3>
+                <a href="">Show Wild Life</a>
+            </h3>
+        </div>
+    </div>
+</body>
+
+</html>
