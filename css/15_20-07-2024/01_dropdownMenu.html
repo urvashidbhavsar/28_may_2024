@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .list {
+            background-color: darkolivegreen;
+        }
+
+        .list .nav {
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .list .nav li {
+            padding: 10px;
+        }
+
+        .list .nav li a {
+            color: white;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .list .nav li i {
+            color: white;
+            transition: 1s all;
+        }
+
+        .list .nav .dropdown {
+            position: relative;
+        }
+
+        .list .nav .dropdown .menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+            box-shadow: 0 0 5px black;
+        }
+
+        .list .nav .dropdown .menu a {
+            color: black;
+        }
+
+        .list .nav .dropdown:hover .menu {
+            display: block;
+        }
+
+        .list .nav .dropdown:hover i {
+            rotate: 180deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li class="dropdown">
+                <a href="">Course</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="menu">
+                    <li><a href="">FrontEnd</a></li>
+                    <li><a href="">BackEnd</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="">Services</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="menu">
+                    <li><a href="">Lab Service</a></li>
+                    <li><a href="">Mentor Service</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
