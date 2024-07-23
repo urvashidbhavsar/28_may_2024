@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            /* variable is a name of memory location or store value
+            variable created with -- sign.
+
+            variable created for background-colors, colors, font-size, padding, margin, height and width
+            */
+            --blue: blue;
+            --white: white;
+            --font-1: calc(3vw + 1rem);
+            --h-auto: auto;
+            --w-50: 50%;
+            --p-1: 10px;
+            --p-2: 20px;
+        }
+
+        h1 {
+            background-color: var(--blue);
+            color: var(--white);
+            font-size: var(--font-1);
+            height: var(--h-auto);
+            width: var(--w-50);
+            padding: var(--p-2);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello User</h1>
+</body>
+
+</html>

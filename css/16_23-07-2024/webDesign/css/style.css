@@ -1,0 +1,120 @@
+/* compulsory applied */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/* common css */
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sevillana", cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --p-1  : 10px;
+    --p-2  : 20px;
+    --p-3  : 30px;
+    --p-4  : 40px;
+    --p-5  : 50px;
+    --p-6  : 60px;
+    --p-7  : 70px;
+    --p-8  : 80px;
+    --p-9  : 90px;
+    --p-100: 100px;
+
+    --lightgray  : #b3b3b3;
+    --salmon     : salmon;
+    --lightsalmon: #fba59b;
+    --white      : white;
+    --black      : black;
+}
+
+.container {
+    max-width    : 1200px;
+    margin       : auto;
+    padding-left : var(--p-1);
+    padding-right: var(--p-1);
+}
+
+/* ============================================================ */
+.topNav {
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.topNav .navbar {
+    display    : flex;
+    align-items: center;
+}
+
+.topNav .navbar i {
+    color: var(--salmon);
+}
+
+.topNav .navbar .contact {
+    border-right : 1px solid var(--lightgray);
+    padding-right: var(--p-2);
+}
+
+.topNav .navbar .socials {
+    border-right   : 1px solid var(--lightgray);
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 0 var(--p-2);
+    flex           : 1;
+}
+
+.topNav .navbar .socials .social-icon {
+    display    : flex;
+    align-items: center;
+    gap        : 23px;
+}
+
+.topNav .navbar .socials .social-icon a i {
+    color: var(--black);
+}
+
+.topNav .navbar .booking {
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+    flex       : 0.4;
+}
+
+.topNav .navbar .booking button {
+    padding         : var(--p-2);
+    background-color: var(--lightsalmon);
+    border          : 1px solid transparent;
+    font-size       : 16px;
+    color           : var(--white);
+}
+
+.topNav .navbar .booking .con-sel {
+    display    : flex;
+    gap        : 10px;
+    align-items: center;
+}
+
+.topNav .navbar .booking .con-sel img {
+    height       : 40px;
+    width        : 40px;
+    border-radius: 50%;
+    object-fit   : cover;
+}
