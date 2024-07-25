@@ -1,0 +1,297 @@
+/* compulsory applied */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/* common css */
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sevillana", cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --p-1  : 10px;
+    --p-2  : 20px;
+    --p-3  : 30px;
+    --p-4  : 40px;
+    --p-5  : 50px;
+    --p-6  : 60px;
+    --p-7  : 70px;
+    --p-8  : 80px;
+    --p-9  : 90px;
+    --p-100: 100px;
+
+    --lightgray  : #b3b3b3;
+    --salmon     : salmon;
+    --lightsalmon: #fba59b;
+    --white      : #ffffff;
+    --black      : #000000;
+
+    --big-font: calc(3.5vw + 30px);
+    --font-1  : calc(2.5vw + 20px);
+    --font-2  : calc(2vw + 18px);
+    --font-3  : calc(1.5vw + 16px);
+}
+
+.container {
+    margin       : auto;
+    padding-left : var(--p-1);
+    padding-right: var(--p-1);
+}
+
+/* ============================================================ */
+.topNav {
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.topNav .navbar {
+    display    : flex;
+    align-items: center;
+}
+
+.topNav .navbar i {
+    color: var(--salmon);
+}
+
+.topNav .navbar .contact {
+    border-right : 1px solid var(--lightgray);
+    padding-right: var(--p-2);
+}
+
+.topNav .navbar .socials {
+    border-right   : 1px solid var(--lightgray);
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 0 var(--p-2);
+    flex           : 1;
+}
+
+.topNav .navbar .socials .social-icon {
+    display    : flex;
+    align-items: center;
+    gap        : 23px;
+}
+
+.topNav .navbar .socials .social-icon a i {
+    color: var(--black);
+}
+
+.topNav .navbar .booking {
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+    flex       : 0.4;
+}
+
+.topNav .navbar .booking button {
+    padding         : var(--p-2);
+    background-color: var(--lightsalmon);
+    border          : 1px solid transparent;
+    font-size       : 16px;
+    color           : var(--white);
+}
+
+.topNav .navbar .booking .con-sel {
+    display    : flex;
+    gap        : 10px;
+    align-items: center;
+}
+
+.topNav .navbar .booking .con-sel img {
+    height       : 40px;
+    width        : 40px;
+    border-radius: 50%;
+    object-fit   : cover;
+}
+
+/* ============================================================== */
+header {
+    position  : sticky;
+    top       : 0;
+    z-index   : 111;
+    background: var(--white);
+}
+
+header .navbar {
+    padding        : var(--p-1) 0;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header .navbar .logo h1 {
+    font-size: var(--font-1);
+    color    : var(--lightsalmon);
+}
+
+header .navbar .logo h1 a {
+    color: var(--black);
+}
+
+header .navbar .nav {
+    display    : flex;
+    align-items: center;
+    gap        : 40px;
+}
+
+header .navbar .nav ul {
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+}
+
+header .navbar .nav ul li {
+    padding: var(--p-1);
+}
+
+header .navbar .nav ul li a {
+    color    : var(--black);
+    font-size: 18px;
+}
+
+header .navbar .nav ul li a::after {
+    content         : "";
+    height          : 3px;
+    width           : 100%;
+    background-color: var(--salmon);
+    display         : block;
+}
+
+header .navbar .nav ul li a.link::after {
+    transform: scaleY(0);
+}
+
+header .navbar .nav ul li a.link:hover::after {
+    transform: scaleY(1);
+}
+
+header .navbar .nav .search {
+    padding: var(--p-1);
+}
+
+header .navbar .nav .search a {
+    color: var(--black);
+}
+
+header .navbar .navbtn {
+    display: none;
+}
+
+header .navbar .navbtn button {
+    height          : 35px;
+    width           : 35px;
+    background-color: transparent;
+    font-size       : 16px;
+}
+
+/* ============================================================ */
+.homepage {
+    background     : url(https://preview.colorlib.com/theme/sona/img/hero/hero-3.jpg.webp) no-repeat center;
+    background-size: cover;
+    padding        : var(--p-100) 0;
+    position       : relative;
+    z-index        : 1;
+}
+
+.homepage::after {
+    content         : "";
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index         : -1;
+}
+
+.homepage .home-data {
+    display              : grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap                  : 30px;
+}
+
+.homepage .home-data .homeText {
+    color: var(--white);
+}
+
+.homepage .home-data .homeText h1 {
+    font-size     : var(--big-font);
+    letter-spacing: 3px;
+}
+
+.homepage .home-data .homeText p {
+    font-size     : 18px;
+    padding-bottom: var(--p-2);
+}
+
+.homepage .home-data .homeText a {
+    color         : var(--white);
+    text-transform: uppercase;
+    font-size     : 12px;
+    letter-spacing: 2px;
+}
+
+.homepage .home-data .homeText a::after {
+    content         : "";
+    height          : 3px;
+    width           : 120px;
+    background-color: var(--salmon);
+    display         : block;
+    margin-top      : 7px;
+}
+
+.homepage .home-data .homeForm {
+    background-color: var(--white);
+    padding         : var(--p-3);
+}
+
+.homepage .home-data .homeForm .input-field {
+    padding: var(--p-1) 0;
+}
+
+.homepage .home-data .homeForm .input-field .label {
+    padding-bottom: 3px;
+}
+
+.homepage .home-data .homeForm .input-field input[type="date"],
+select {
+    height      : 35px;
+    width       : 100%;
+    padding-left: var(--p-1);
+    border      : 1px solid var(--lightgray);
+}
+
+.homepage .home-data .homeForm .input-field input[type="date"]:focus-visible,
+select:focus-visible {
+    outline: none;
+}
+
+.homepage .home-data .homeForm .input-field .btn {
+    width           : 100%;
+    padding         : var(--p-1);
+    background-color: transparent;
+    color           : var(--salmon);
+    border          : 2px solid var(--salmon);
+    text-transform  : uppercase;
+    font-size       : 12px;
+    letter-spacing  : 2px;
+}
