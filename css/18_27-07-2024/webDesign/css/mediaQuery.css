@@ -1,0 +1,121 @@
+/* =============================================== */
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .navbtn {
+        display: block;
+    }
+
+    .homepage .home-data {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage {
+        padding: var(--p-5) 0;
+    }
+
+    .aboutUs .about-sec {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .aboutUs .about-sec .hotel-photos .photos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services .ser-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* =============================================== */
+@media (min-width:576px) {
+    .container {
+        max-width: 550px;
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .navbtn {
+        display: block;
+    }
+
+    .homepage .home-data {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutUs .about-sec {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services .ser-image {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =============================================== */
+@media (min-width:768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .homepage .home-data {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+/* =============================================== */
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .topNav {
+        display: block;
+    }
+
+    header .navbar .nav {
+        display: flex;
+    }
+
+    header .navbar .navbtn {
+        display: none;
+    }
+
+    .aboutUs .about-sec {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services .ser-image {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* =============================================== */
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* =============================================== */
+@media (min-width:1400px) {
+    .container {
+        max-width: 1340px;
+    }
+}
