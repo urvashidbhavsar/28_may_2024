@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            border-bottom: 2px solid blue;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var amount = 10;
+
+        // i have a rs. 10
+        // before ES6
+        document.write("<div class='mydiv'>I have a &#8377;", amount, "</div>");
+        document.write("<div class='mydiv'>I have a &#8377;" + amount + "</div>");
+
+        // after ES6
+        document.write(`<div class='mydiv'>I have a &#8377;${amount} </div>`)
+    </script>
+</body>
+
+</html>
