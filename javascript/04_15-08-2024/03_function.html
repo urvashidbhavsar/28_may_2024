@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // create function without argument / parameter
+        function messagePrint() {
+            document.write(`<div>Hello world</div>`)
+        }
+
+        // calling function
+        messagePrint();
+        messagePrint();
+
+        // create function with argument / parameter
+        function MsgPrint(no, msg) {
+            document.write(`<div>${no}=${msg}</div>`)
+        }
+        // calling function
+        MsgPrint(1, "JavaScript");
+        MsgPrint(2, "TypeScript");
+        MsgPrint(3, "React Js")
+
+    </script>
+</body>
+
+</html>
