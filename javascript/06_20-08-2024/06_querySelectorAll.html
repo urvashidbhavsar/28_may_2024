@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br>
+    <div class="parent"> Parent
+        <div class="child">Child</div>
+        <div class="child">Child</div>
+    </div>
+    <br><br>
+    <h1>Hello world</h1>
+    <h2>Hello world</h2>
+    <p>Hello world</p>
+
+    <script>
+        let text = document.querySelectorAll(".box");
+        for (let i = 0; i < text.length; i++) {
+            text[i].innerHTML = "Class called using queryselectorAll"
+        }
+
+        let sel = document.querySelectorAll(".parent .child")
+        sel[0].style.color = "red"
+        sel[1].style.color = "red"
+
+        let grp = document.querySelectorAll("h1,h2,p");
+        for (let i = 0; i < grp.length; i++) {
+            grp[i].style.color = "blue"
+        }
+    </script>
+</body>
+
+</html>
