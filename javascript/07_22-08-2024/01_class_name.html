@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* create a random class which is not set any structure */
+        .title {
+            font-family: sans-serif;
+            color: white;
+            background-color: darkcyan;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="changeCss()">change css</button>
+
+    <h1 id="h1" class="heading">Hello world</h1>
+
+    <script>
+        function changeCss() {
+            let head = document.getElementById("h1")
+            // head.className = "title";
+
+            if (head.className == "heading") {
+                head.className = "title"
+            } else {
+                head.className = "heading"
+            }
+        }
+    </script>
+</body>
+
+</html>

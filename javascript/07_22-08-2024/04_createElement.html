@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li::before {
+            content: "\27A1";
+            /* content: "\f058"; */
+            /* font-family: "Font Awesome 6 Free"; */
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="AddValue()">Add value</button>
+
+    <ul id="list">
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        function AddValue() {
+            let create = document.createElement("li");
+            let text = document.createTextNode("Add new list");
+            create.append(text);
+            document.getElementById("list").appendChild(create)
+        }
+    </script>
+</body>
+
+</html>

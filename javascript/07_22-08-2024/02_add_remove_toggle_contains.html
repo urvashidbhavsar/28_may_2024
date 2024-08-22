@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            border: 1px solid black;
+        }
+
+        .mydiv {
+            height: auto;
+            width: 300px;
+            padding: 20px;
+            background-color: teal;
+            color: white;
+        }
+
+        .newdiv {
+            height: auto;
+            width: 300px;
+            padding: 20px;
+            background-color: magenta;
+            color: white;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addCss()">Add</button>
+    <button onclick="removeCss()">Remove</button>
+    <button onclick="toggleCss()">Toggle</button>
+    <button onclick="checkClass()">Contains</button>
+    <hr>
+    <div id="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloribus error earum in, exercitationem
+        voluptatibus praesentium quasi architecto similique cum amet magni ipsum beatae accusamus illum quidem commodi
+        aliquam et!
+    </div>
+
+    <div id="div2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat temporibus tempore asperiores reiciendis
+        dolores non delectus necessitatibus nobis error soluta iure, quis veritatis illum culpa quos, facere optio eius
+        tempora.
+    </div>
+
+    <script>
+        function addCss() {
+            let div = document.getElementById("div1");
+            div.classList.add("mydiv")
+        }
+        function removeCss() {
+            let div = document.getElementById("div1");
+            div.classList.remove("mydiv")
+        }
+        function toggleCss() {
+            let div = document.getElementById("div2");
+            div.classList.toggle("newdiv")
+        }
+        function checkClass() {
+            let div = document.getElementById("div2");
+            if (div.classList.contains("newdiv") == true) {
+                alert("class exist")
+            } else {
+                alert("class not exist")
+            }
+        }
+    </script>
+</body>
+
+</html>

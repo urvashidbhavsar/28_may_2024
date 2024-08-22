@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myimg {
+            width: 400px;
+            border: 4px solid rgb(192, 27, 238);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setAttr()">set attribute</button>
+    <button onclick="removeAttr()">remove attribute</button>
+    <button onclick="getattr()">get attribute</button>
+
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_640.jpg" alt="" id="myimg">
+
+    <script>
+        function setAttr() {
+            let img = document.getElementById("myimg")
+            // img.setAttribute("width", "400px")
+            // img.setAttribute("style", "border:4px solid green")
+            img.setAttribute("class", "myimg")
+        }
+
+        function removeAttr() {
+            let img = document.getElementById("myimg");
+            img.removeAttribute("class")
+        }
+
+        function getattr() {
+            let img = document.getElementById("myimg")
+            let text = img.getAttribute("src")
+            alert(text)
+        }
+    </script>
+</body>
+
+</html>

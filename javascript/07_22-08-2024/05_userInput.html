@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        form {
+            width: fit-content;
+            padding: 30px;
+            border: 1px solid black;
+            margin: 50px auto;
+        }
+
+        .row {
+            padding: 5px 0;
+        }
+
+        span {
+            font-family: sans-serif;
+            color: blue;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid gray;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h2>Login</h2>
+        <div class="row">
+            <input type="text" name="" id="username" placeholder="Enter Username">
+        </div>
+        <div class="row">
+            <input type="password" name="" id="password" placeholder="Enter Password">
+        </div>
+        <div class="row">
+            <button onclick="return UserInput()">Login</button>
+        </div>
+    </form>
+    <p>Username : <span id="m1"></span></p>
+    <p>Password : <span id="m2"></span></p>
+
+    <script>
+        function UserInput() {
+            let user = document.getElementById("username"),
+                pass = document.getElementById("password");
+
+            if (user.value == "" || pass.value == "") {
+                alert("Invalid username and password");
+                user.classList.add("error");
+                pass.classList.add("error")
+            } else {
+                document.getElementById("m1").innerHTML = user.value;
+                document.getElementById("m2").innerHTML = pass.value;
+                user.classList.remove("error");
+                pass.classList.remove("error")
+            }
+
+            return false
+        }
+    </script>
+</body>
+
+</html>
