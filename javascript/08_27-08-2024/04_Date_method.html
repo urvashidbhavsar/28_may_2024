@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p>Day is : <span id="p5"></span></p>
+
+    <script>
+        var d = new Date();
+
+        document.getElementById("p1").innerHTML = d;
+
+        document.getElementById("p2").innerHTML = `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`
+
+        document.getElementById("p3").innerHTML = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}:${d.getMilliseconds()}`
+
+        document.getElementById("p4").innerHTML = d.getDay();
+
+        var day = d.getDay();
+        switch (day) {
+            case 1:
+                document.getElementById("p5").innerHTML = "Monday"
+                break;
+            case 2:
+                document.getElementById("p5").innerHTML = "Tuesday"
+                break;
+            case 3:
+                document.getElementById("p5").innerHTML = "Wednesday"
+                break;
+            case 4:
+                document.getElementById("p5").innerHTML = "Thursday"
+                break;
+            case 5:
+                document.getElementById("p5").innerHTML = "Friday"
+                break;
+            case 6:
+                document.getElementById("p5").innerHTML = "Saturday"
+                break;
+            case 7:
+                document.getElementById("p5").innerHTML = "Sunday"
+                break;
+        }
+    </script>
+</body>
+
+</html>

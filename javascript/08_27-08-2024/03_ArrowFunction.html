@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click</button>
+    <!-- <button onclick="sum(12,44)">Addition</button> -->
+
+    <script>
+        let b = document.getElementById("btn")
+        b.addEventListener("click", () => {
+            alert("Hello User")
+        })
+
+        // convert in arrow function
+        // function sum() {
+        var sum = (a, b) => {
+            document.write(`<div>${a + b}</div>`)
+        }
+        sum(12, 34);
+        sum(23, 11);
+    </script>
+</body>
+
+</html>

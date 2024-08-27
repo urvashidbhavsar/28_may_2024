@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .count {
+            height: 200px;
+            width: 200px;
+            background-color: darkcyan;
+            color: white;
+            font-size: 40px;
+            display: grid;
+            place-content: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="count"></div>
+
+    <script>
+        var mydiv = document.querySelector(".count");
+        var start = 100;
+        var counting = setInterval(() => {
+            mydiv.innerHTML = ++start;
+            if (start == 500) {
+                clearInterval(counting)
+            }
+        });
+    </script>
+</body>
+
+</html>
