@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Toy Type</th>
+                <th>Organization</th>
+                <th>Price</th>
+                <th>Kids Age</th>
+                <th>Toy Image</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        var toyinfo = [
+            {
+                id: 1,
+                name: "Plastic Building Blocks",
+                org: "ARIZON DIY",
+                price: "194",
+                kidsAge: "Above 3 year",
+                image: "https://m.media-amazon.com/images/I/81I0EFCc29L._SY450_.jpg"
+            },
+            {
+                id: 2,
+                name: "Go Ride Toy Car",
+                org: "ToyMagic",
+                price: "1099",
+                kidsAge: "1 to 5 year",
+                image: "https://m.media-amazon.com/images/I/61PAXWKw09L._SY450_.jpg"
+            }
+        ]
+
+        let tabledata = document.getElementById("data")
+        for (let i = 0; i < toyinfo.length; i++) {
+            tabledata.innerHTML += `
+            <tr>
+                <td>${toyinfo[i].id}</td>
+                <td>${toyinfo[i].name}</td>
+                <td>${toyinfo[i].org}</td>
+                <td>&#8377;${toyinfo[i].price}</td>
+                <td>${toyinfo[i].kidsAge}</td>
+                <td><img src=${toyinfo[i].image}></td>
+            </tr>`
+        }
+    </script>
+</body>
+
+</html>
