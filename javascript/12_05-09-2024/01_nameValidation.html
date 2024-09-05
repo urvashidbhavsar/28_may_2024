@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h3>Name Validation</h3>
+        <form action="#">
+            <div class="row">
+                <input type="text" name="uname" id="username" placeholder="Enter Name" onblur="return checkName()"
+                    onkeyup="return checkNamePtn()" class="input" maxlength="20">
+                <div class="msg" id="msg"></div>
+            </div>
+            <!-- <div class="row">
+                <input type="text" name="" id="" placeholder="Enter Name" class="input">
+            </div> -->
+            <div class="row">
+                <button onclick="return checkName()">Click</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkName() {
+            let first = document.getElementById("username");
+            if (first.value == "" || first.value == null) {
+                document.getElementById("msg").innerHTML = " Enter Name"
+                first.classList.add("error");
+                first.focus()
+            }
+            return false
+        }
+
+        function checkNamePtn() {
+            let first = document.getElementById("username");
+            let ptn = /^[a-zA-Z\s]*$/
+            if (!ptn.test(first.value)) {
+                document.getElementById("msg").innerHTML = "Invalid Name!!!"
+                first.classList.add("error");
+            } else if (first.value.length < 6) {
+                document.getElementById("msg").innerHTML = "Minimum 6 character required"
+                first.classList.remove("error");
+            } else {
+                document.getElementById("msg").innerHTML = null;
+                first.classList.remove("error");
+            }
+            return false
+        }
+
+        let inp = document.querySelectorAll(".input");
+        inp.forEach(element => {
+            element.addEventListener("input", () => {
+                element.value = element.value.toUpperCase()
+            })
+        });
+    </script>
+</body>
+
+</html>
