@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h3>Email Validation</h3>
+        <form action="#">
+            <div class="row">
+                <input type="text" name="" id="email" placeholder="Enter Email" onblur="return checkEmail()"
+                    onkeyup="return regEx()">
+                <div class="msg" id="msg"></div>
+            </div>
+            <div class="row">
+                <button onclick="return checkEmail()">Click Here</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkEmail() {
+            let mail = document.getElementById("email");
+            if (mail.value == "" || mail.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Email";
+                mail.classList.add("error");
+            }
+            return false
+        }
+
+        function regEx() {
+            let mail = document.getElementById("email");
+            // let ptn = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let ptn = /^[a-zA-z0-9%$\.]*@[a-z]*(\.[a-z]{2,4})*$/
+            if (ptn.test(mail.value)) {
+                document.getElementById("msg").innerHTML = "true"
+            } else {
+                document.getElementById("msg").innerHTML = "false"
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
