@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h3>Name Validation</h3>
+        <form action="#">
+            <div class="row">
+                <input type="text" name="" id="fname" placeholder="First Name"
+                    onkeyup="return checkNamePtn('fname','msg1')">
+                <div class="msg" id="msg1"></div>
+            </div>
+            <div class="row">
+                <input type="text" name="" id="mname" placeholder="Middle name"
+                    onkeyup="return checkNamePtn('mname','msg2')">
+                <div class="msg" id="msg2"></div>
+            </div>
+            <div class="row">
+                <input type="text" name="" id="lname" placeholder="Last name"
+                    onkeyup="return checkNamePtn('lname','msg3')">
+                <div class="msg" id="msg3"></div>
+            </div>
+            <div class="row">
+                <input type="radio" name="g" id="m" onblur="return selectInput(this, 'msg4')"> Male
+                <input type="radio" name="g" id="f"> Female
+                <div class="msg" id="msg4"></div>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="" id="c1" onblur="return selectInput(this, 'msg5')"> c1
+                <input type="checkbox" name="" id="c2"> c2
+                <div class="msg" id="msg5"></div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkNamePtn(inputid, msgid) {
+            let field = document.getElementById(inputid)
+            let ptn = /^[a-zA-Z\s]*$/
+            if (!ptn.test(field.value)) {
+                document.getElementById(msgid).innerHTML = "Invalid Name!!!"
+                field.classList.add("error");
+            } else if (field.value.length < 2) {
+                document.getElementById(msgid).innerHTML = "Minimum 2 character required"
+                field.classList.remove("error");
+            } else {
+                document.getElementById(msgid).innerHTML = null;
+                field.classList.remove("error");
+            }
+            return false
+        }
+
+        function selectInput(selectId, msgId) {
+            if (selectId.checked == false) {
+                document.getElementById(msgId).innerHTML = "Select Value!!"
+            } else {
+                document.getElementById(msgId).innerHTML = null
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>
