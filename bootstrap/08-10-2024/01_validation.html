@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="was-validated">
+            <div class="mb-3">
+                <label for="address" class="form-label">Textarea</label>
+                <textarea class="form-control" id="address" placeholder="Required example textarea" required></textarea>
+                <div class="invalid-feedback">
+                    Enter Address
+                </div>
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="check1" required>
+                <label class="form-check-label" for="check1">Check this checkbox</label>
+                <div class="invalid-feedback">Example invalid feedback text</div>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="radio-stacked" required>
+                <label class="form-check-label" for="radio1">Toggle this radio</label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="radio2" name="radio-stacked" required>
+                <label class="form-check-label" for="radio2">Or toggle this other radio</label>
+                <div class="invalid-feedback">More example invalid feedback text</div>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-select" required aria-label="select example">
+                    <option value="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <div class="invalid-feedback">Example invalid select feedback</div>
+            </div>
+
+            <div class="mb-3">
+                <input type="file" class="form-control" aria-label="file example" required>
+                <div class="invalid-feedback">Example invalid form file feedback</div>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
