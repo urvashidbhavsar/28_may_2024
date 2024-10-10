@@ -48,13 +48,17 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#contactForm"
+                                aria-controls="contactForm">Contact</a>
                         </li>
                     </ul>
                     <div class="extra d-flex gap-3 align-items-lg-center flex-column flex-sm-column flex-lg-row">
-                        <a href="#" class="text-danger-emphasis p-3 bg-body-tertiary rounded-circle"><i
-                                class="bi bi-search"></i></a>
-                        <button class="btn btn-primary btn-lg"><i class="bi bi-person"></i> User Login</button>
+                        <a href="#" class="text-danger-emphasis p-3 bg-body-tertiary rounded-circle"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Search here">
+                            <i class="bi bi-search"></i>
+                        </a>
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#loginpage"><i
+                                class="bi bi-person"></i> User Login</button>
                     </div>
                 </div>
             </div>
@@ -78,7 +82,9 @@
                             corporis sed fugiat, molestiae assumenda repellendus consectetur quos voluptas voluptatibus
                             rem, odit facere perspiciatis, vitae sunt?
                         </p>
-                        <button class="btn btn-danger">Learn More</button>
+                        <button class="btn btn-danger" data-bs-toggle="popover" data-bs-title="About Us"
+                            data-bs-content="Meet Our Company on given location">Learn
+                            More</button>
                     </div>
                 </div>
                 <div class="carousel-item slide2">
@@ -146,6 +152,181 @@
             </div>
         </div>
     </section>
+
+    <section class="expSection">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <h2>Need a Beter Work? We are here to IT Solution with 30 years of experience</h2>
+
+                    <ul class="nav nav-tabs pt-3" id="expList" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="exp1" data-bs-toggle="tab" data-bs-target="#exp1-pane"
+                                type="button" role="tab" aria-controls="exp1-pane" aria-selected="true">What we
+                                do</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="exp2" data-bs-toggle="tab" data-bs-target="#exp2-pane"
+                                type="button" role="tab" aria-controls="exp2-pane" aria-selected="false">Our
+                                Mission</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="exp3" data-bs-toggle="tab" data-bs-target="#exp3-pane"
+                                type="button" role="tab" aria-controls="exp3-pane" aria-selected="false">Social
+                                Impact</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content py-3" id="expListContent">
+                        <div class="tab-pane fade show active" id="exp1-pane" role="tabpanel" aria-labelledby="exp1"
+                            tabindex="0">
+                            <h5>To believe that the smart looking website is the first impression all over.</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error deserunt.</p>
+                        </div>
+                        <div class="tab-pane fade" id="exp2-pane" role="tabpanel" aria-labelledby="exp2" tabindex="0">
+                            <h5>This Our History to a tendency to believe that the smart looking website is the first
+                                impression.</h5>
+                            <ul>
+                                <li>Helping Nonprofit organizations</li>
+                                <li>Leading private equity firms</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="exp3-pane" role="tabpanel" aria-labelledby="exp3" tabindex="0">
+                            <h5>This Our History to a tendency to believe thes that smart looking website is the first
+                                impression.</h5>
+                            <ul>
+                                <li>Always Fast and friendly support</li>
+                                <li>Experienced Professional Team</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <div class="accordion" id="myquestions">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+                                    How much does a static website cost?
+                                </button>
+                            </h2>
+                            <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#myquestions">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                                    How to choose a best web template?
+                                </button>
+                            </h2>
+                            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#myquestions">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eos reprehenderit
+                                    perferendis recusandae. Velit, impedit sint, ipsa corrupti dicta veniam est sed
+                                    exercitationem id officia quasi expedita repudiandae suscipit facilis?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                                    How to download a template?
+                                </button>
+                            </h2>
+                            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#myquestions">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Doloremque, dolore at rerum molestias voluptas maxime iure, assumenda.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+                                    How to download a template?
+                                </button>
+                            </h2>
+                            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#myquestions">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Doloremque, dolore at rerum molestias voluptas maxime iure, assumenda.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="contactForm"
+        aria-labelledby="contactFormLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="contactFormLabel">Contact Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex gap-3">
+                <div class="">Contact No</div>
+                <div class="">9856325568</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginpage" tabindex="-1" aria-labelledby="loginpageLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginpageLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="">
+                                <label for="email">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="pass" placeholder="">
+                                <label for="pass">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">Proceed</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 </body>
 
 </html>
