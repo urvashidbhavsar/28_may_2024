@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .btn {
+            padding: 10px 15px;
+            background-color: saddlebrown;
+            color: white;
+            font-size: 15px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">set</button>
+    <button id="btn2">remove</button>
+    <button id="btn3">get</button>
+    <hr>
+
+    <button id="mybtn">Show</button>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                // $("#mybtn").attr("type", "submit")
+                $("#mybtn").attr("class", "btn")
+            })
+            $("#btn2").click(function () {
+                $("#mybtn").removeAttr("class")
+            })
+            $("#btn3").click(function () {
+                alert($("#mybtn").attr("class"))
+            })
+        })
+    </script>
+</body>
+
+</html>

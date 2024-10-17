@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .div1 {
+            width: 400px;
+        }
+
+        .box1 {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Add class</button>
+    <button id="btn2">Remove class</button>
+    <button id="btn3">Toggle class</button>
+    <button id="btn4">Has class</button>
+
+    <hr>
+    <div id="div1" class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error perferendis voluptatum consectetur
+        dignissimos vitae cupiditate porro reiciendis cumque optio iure inventore atque suscipit, eligendi nihil saepe
+        consequatur omnis nisi.
+    </div>
+
+    <div id="div2" class="div1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse aut consequatur officia assumenda quos, optio ex
+        distinctio nam id tempore, pariatur velit vero laborum nulla beatae quo ea dicta cumque.
+    </div>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#div1").addClass("box1")
+            })
+            $("#btn2").click(function () {
+                $("#div1").removeClass("box1")
+            })
+            $("#btn3").click(function () {
+                $("#div2").toggleClass("box1")
+            })
+            $("#btn4").click(function () {
+                if ($("#div2").hasClass("box1")) {
+                    alert("class exist")
+                } else {
+                    alert("not exist")
+                } x
+            })
+        })
+
+        // $().click(function () {
+        //     $mynav = $(".nav");
+        //     $mynav.toggleClass("navShow")
+        // })
+
+        // $(window).scroll(function () {
+        //     $current = $(this).scrollTop()
+        //     if ($current > 0) {
+        //         $("header").addClass()
+        //     } else {
+        //         $("header").removeClass()
+        //     }
+        // })
+    </script>
+</body>
+
+</html>

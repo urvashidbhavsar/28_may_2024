@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    <hr>
+
+    <div id="list">
+        <div class="setval1">List 1</div>
+        <div class="setval2">List 2</div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".setval2").appendTo("#list")
+            })
+            $("#btn2").click(function () {
+                $(".setval2").prependTo("#list")
+            })
+            $("#btn3").click(function () {
+                $(".setval2").insertBefore("#list")
+            })
+            $("#btn4").click(function () {
+                $(".setval2").insertAfter("#list")
+            })
+        })
+    </script>
+</body>
+
+</html>
