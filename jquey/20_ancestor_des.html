@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        span,
+        p {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .set {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <div class="main"> Main
+        <div class="sub">Sub
+            <div> div
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sapiente praesentium eum
+                    excepturi, dolores aliquid itaque tenetur nostrum nam ducimus minus. Dolorum debitis enim adipisci.
+                    Esse nam accusantium eum soluta!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            // ancestor
+            // $("p").parent(".main").addClass("set")
+            // $("p").parents(".main").addClass("set")
+            // $("p").parentsUntil(".main").addClass("set")
+
+            // descendent 
+            // $(".main").children().addClass("set")
+            $(".main").find("p").addClass("set")
+        })
+    </script>
+</body>
+
+</html>

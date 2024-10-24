@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main div {
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            font-size: 30px;
+        }
+
+        .set {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <div class="main">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+
+    <script>
+        $(function () {
+            // $(".box3").siblings(".box5").addClass("set")
+            // $(".box1").next().addClass("set")
+            // $(".box1").nextAll(".box3").addClass("set")
+            // $(".box1").nextUntil(".box5").addClass("set")
+            // $(".box5").prev().addClass("set")
+            // $(".box5").prevAll(".box1").addClass("set")
+            $(".box5").prevUntil(".box1").addClass("set")
+
+        })
+    </script>
+</body>
+
+</html>
