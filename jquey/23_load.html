@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <!-- ajax = asyncronised js and xml -->
+    <!-- load data without reloading a page -->
+
+    <button id="btn">load file</button>
+
+    <pre id="data"></pre>
+    <!-- <p id="data"></p> -->
+
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $("#data").load("syntax.txt")
+            })
+        })
+    </script>
+</body>
+
+</html>
