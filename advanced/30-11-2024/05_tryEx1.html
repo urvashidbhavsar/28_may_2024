@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // example 1
+        try {
+            let a = 3, b = 0;
+            let res = a / b;
+            console.log(res);
+        } catch (e) {
+            throw new Error(e)
+        }
+
+        // example 2 = error for declaration / reference error
+        try {
+            let a = 5;
+            console.log(a + b);
+        } catch (e) {
+            // throw new Error("Not Defined")
+            throw new Error(e)
+        }
+
+        // example 3 = type error
+        try {
+            const a = 5;
+            console.log(a++);
+        } catch (e) {
+            throw new Error(e)
+        }
+
+        // example 4 = range error
+        const evenNum = (num, end) => {
+            if (num == end) return;
+            console.log(num);
+            // if cant set 2nd arg, it show range error
+            // evenNum(num + 1)
+            evenNum(num + 1, end)
+        }
+        try {
+            evenNum(1, 20)
+        }
+        catch (e) {
+            throw new Error(e)
+        }
+        finally {
+            console.log("task completed");
+
+        }
+    </script>
+</body>
+
+</html>
