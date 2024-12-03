@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function person(fname, lname) {
+            this.fname = fname;
+            this.lname = lname;
+        }
+        person.prototype.address = "Surat";
+
+        // create a object of instance of variable
+        var p1 = new person("Suraj", "Patel")
+        var p2 = new person("Riya", "Patel")
+        console.log(p1.fname + " " + p1.lname + " " + p1.address);
+        console.log(p2.fname + " " + p2.lname + " " + p2.address);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // array 
+        var arr = ["table", "chair", "cupboard", "dining table"]
+        // console.log(arr[0]);
+        // console.log(arr[1]);
+        // console.log(arr[2]);
+        // console.log(arr[3]);
+
+        // de-structuring 
+        var [table, chair, cupboard, dtable] = arr;
+        console.log(table);
+
+        // object
+        var products = {
+            brands: "Abc",
+            price: 56895,
+            validity: "till 2025"
+        }
+        // console.log(products.brands);
+
+        // de-structuring 
+        var { brands, price, validity } = products
+        console.log(brands);
+        console.log(price);
+        console.log(validity);
+
+
+    </script>
+</body>
+
+</html>

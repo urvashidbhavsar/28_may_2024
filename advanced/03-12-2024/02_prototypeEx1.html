@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function employee(firstname, lastname) {
+            this.firstname = firstname
+            this.lastname = lastname;
+        }
+        employee.prototype.getFullDetails = function () {
+            return this.firstname + " " + this.lastname
+        }
+        var e1 = new employee("Suraj", "Patel");
+        console.log(e1.getFullDetails());
+
+        // function 
+    </script>
+</body>
+
+</html>
