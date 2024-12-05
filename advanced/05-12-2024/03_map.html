@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="list"></div>
+
+    <script>
+        // for use this method you have array values
+        var numbers = [1, 2, 3, 4, 5, 6]
+        var res = numbers.map((n) => n + 20)
+        console.log(res);
+
+        var menu = ["Home", "About", "Contact", "Services"];
+        var li = document.getElementById("list")
+        var setmenu = menu.map((m) => `<div>${m}</div>`)
+        li.innerHTML = setmenu
+        console.log(setmenu);
+    </script>
+</body>
+
+</html>

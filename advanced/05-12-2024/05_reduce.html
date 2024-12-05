@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numbers = [6, 5, 8, 9, 7, 2]
+        var initialvalue = 1
+        var res = numbers.reduce((total, cval) => {
+            return total *= cval
+        }, initialvalue)
+        console.log(res);
+
+        var s = numbers.sort()
+        console.log(s);
+
+        var obj = {
+            1: "Abc", 2: "Xyz"
+        }
+        console.log(Object.entries(obj)[0]);
+        console.log(Object.entries(obj)[1]);
+
+
+    </script>
+</body>
+
+</html>

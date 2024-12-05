@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // create a 1st function with arg
+        function message(msg) {
+            // call arg value as function
+            msg();
+        }
+        // create 2nd function without arg
+        function mysentance() {
+            console.log("higher order function called");
+        }
+        // called 1st function and pass another function as arg
+        message(mysentance)
+
+        // ====================================
+        // create one arg
+        function message1(msg1) {
+            // call arg
+            msg1;
+        }
+        function mysentance1() {
+            console.log("higher order function called");
+        }
+        // call arg as function
+        message1(mysentance1())
+    </script>
+</body>
+
+</html>
