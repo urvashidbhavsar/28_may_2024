@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="setvalues()">Set Data</button>
+    <button onclick="getvalues()">get Data</button>
+    <button onclick="checkKey()">Key</button>
+    <button onclick="removeData()">Remove</button>
+    <button onclick="Data()">Total Data</button>
+
+
+    <p>Get Value : <span id="res"></span></p>
+    <p>Total Data : <span id="data"></span></p>
+
+    <script>
+        function setvalues() {
+            // localStorage.setItem("1", "Xyz")
+            localStorage.setItem("2", "Abc")
+        }
+        function getvalues() {
+            var get = localStorage.getItem("1")
+            document.getElementById("res").innerHTML = get
+        }
+        function checkKey() {
+            // pass index as argument
+            alert(localStorage.key(0))
+        }
+        function removeData() {
+            localStorage.removeItem("2")
+        }
+        function Data() {
+            var tot = localStorage.length
+            document.getElementById("data").innerHTML = tot
+        }
+    </script>
+</body>
+
+</html>

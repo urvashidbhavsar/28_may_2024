@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- odd even display -->
+    <input type="text" name="" id="input" oninput="setnum()">
+
+    <p id="res"></p>
+
+    <script>
+        var setnum = () => new Promise((res, rej) => {
+            let n = document.getElementById("input").value
+            if (n % 2 == 0) {
+                res("even")
+            } else {
+                rej("odd")
+            }
+        })
+            .then(res => document.getElementById("res").innerHTML = res)
+            .catch(rej => document.getElementById("res").innerHTML = rej)
+    </script>
+</body>
+
+</html>
