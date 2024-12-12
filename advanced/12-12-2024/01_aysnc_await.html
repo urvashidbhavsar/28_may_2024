@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // simple function with set time out it return as function
+        const myfunc1 = () => {
+            setTimeout(() => {
+                console.log("function 1 called");
+            }, 2000);
+        }
+        myfunc1();
+        // async function with await but return promise
+        const myfunc2 = async () => {
+            var text = await "function 2 called"
+            setTimeout(() => {
+                console.log(text);
+            }, 3000)
+        }
+        myfunc2();
+
+        // do not written await in promise
+        // but always written in async
+        const myfunc3 = async () => {
+            var txt = await "function 3 called";
+            return new Promise((res, rej) => {
+                setTimeout(() => {
+                    console.log(txt);
+                }, 3000)
+            })
+        }
+        myfunc3()
+
+        const myfunc4 = async () => {
+            await myfunc2();
+            await myfunc3();
+        }
+        myfunc4();
+    </script>
+</body>
+
+</html>
