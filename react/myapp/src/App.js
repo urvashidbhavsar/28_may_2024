@@ -1,7 +1,8 @@
 import './App.css';
 import Cards from './CardDesignProps/Cards';
-import Propex3 from './PropEx/Propdestrc/Propex3';
-import Propex2 from './PropEx/Propex2';
+import Addfontawesome from './Icons/Addfontawesome';
+// import Propex3 from './PropEx/Propdestrc/Propex3';
+// import Propex2 from './PropEx/Propex2';
 // import Imagecall from './ImageCall/Imagecall';
 // import Propex1 from './PropEx/Propex1';
 // import Footer from './Footer/Footer';
@@ -40,7 +41,8 @@ function App() {
       {/* <Propex1 /> */}
       {/* <Propex2 /> */}
       {/* <Propex3 /> */}
-      <Cards />
+      {/* <Cards /> */}
+      <Addfontawesome />
     </div>
   );
 }

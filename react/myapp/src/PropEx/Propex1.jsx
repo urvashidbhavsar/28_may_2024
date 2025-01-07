@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // this example for use props in single file
 const Userval = (props) => {
@@ -17,5 +18,10 @@ const Propex1 = () => {
         </>
     )
 }
-
+Propex1.propTypes = {
+    username: PropTypes.string,
+}
+Propex1.defaultProps = {
+    username: "User",
+}
 export default Propex1
