@@ -1,6 +1,11 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Cards from './CardDesignProps/Cards';
-import Addfontawesome from './Icons/Addfontawesome';
+import Navigationbar from './bootstrapNav/Navigationbar';
+import Showalert from './Events/Showalert';
+import List from './map_method/List';
+// import Addfontawesome from './Icons/Addfontawesome';
 // import Propex3 from './PropEx/Propdestrc/Propex3';
 // import Propex2 from './PropEx/Propex2';
 // import Imagecall from './ImageCall/Imagecall';
@@ -42,7 +47,10 @@ function App() {
       {/* <Propex2 /> */}
       {/* <Propex3 /> */}
       {/* <Cards /> */}
-      <Addfontawesome />
+      {/* <Addfontawesome /> */}
+      <Navigationbar/>
+      <Showalert/>
+      <List/>
     </div>
   );
 }
