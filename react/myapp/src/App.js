@@ -5,6 +5,10 @@ import Cards from './CardDesignProps/Cards';
 import Navigationbar from './bootstrapNav/Navigationbar';
 import Showalert from './Events/Showalert';
 import List from './map_method/List';
+import StateEx from './state_manage/StateEx';
+import Ifstatementex from './ConditionalRendering/Ifstatementex';
+import Ternary from './ConditionalRendering/Ternary';
+import Employee from './Examples/Employee';
 // import Addfontawesome from './Icons/Addfontawesome';
 // import Propex3 from './PropEx/Propdestrc/Propex3';
 // import Propex2 from './PropEx/Propex2';
@@ -48,9 +52,13 @@ function App() {
       {/* <Propex3 /> */}
       {/* <Cards /> */}
       {/* <Addfontawesome /> */}
-      <Navigationbar/>
-      <Showalert/>
-      <List/>
+      {/* <Navigationbar/> */}
+      {/* <Showalert/> */}
+      {/* <List/> */}
+      {/* <StateEx /> */}
+      {/* <Ifstatementex /> */}
+      {/* <Ternary /> */}
+      <Employee />
     </div>
   );
 }
