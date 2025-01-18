@@ -2,14 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 const Routing = ({ MenuItems }) => {
-    let menu = [
-        { path: "", pathname: "Main" },
-        { path: "./Component/Homepage", pathname: "Home" },
-        { path: "./Component/About", pathname: "About" },
-        { path: "./Component/Contact", pathname: "Contact" },
-    ]
-    let result = menu.map(items =>
-        <li key={items.path}>
+    let result = MenuItems.map(items =>
+        <li key={items.path} className='p-2 text-xl text-rose-800 hover:text-blue-300'>
             <Link to={items.path}>{items.pathname}</Link>
         </li>
     )
