@@ -1,0 +1,5 @@
+
+
+            let menuicons = [faPlaneDeparture, faHotel, faHome, faIgloo, faTrain, faBus, faCab, faIndianRupeeSign, faLocationDot]
+
+    let menuitems = ["Flight", "Hotels", "Homestay & Villas", "Holidays & Packages", "Trains", "Buses", "Cabs", "Forex Card & currency", "Travel Issurance"]

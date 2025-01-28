@@ -20,7 +20,7 @@ const Topheader = () => {
                     <Navbar.Toggle aria-controls="homenav" />
                     <Navbar.Collapse id="homenav" className='justify-content-end'>
                         <Nav className="m-0 align-items-center">
-                            <Topmenulist menuItems={menulist} />
+                            <Topmenulist menuItems={menulist} setcolor="text-white" />
                             <Topmenubtn menuBtn={menubtn} />
                         </Nav>
                     </Navbar.Collapse>
