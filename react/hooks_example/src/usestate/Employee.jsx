@@ -30,7 +30,7 @@ const Employee = () => {
         <>
             search : <input type="search" name="search" value={search} placeholder='Search Here' onChange={filter_data} />
             <hr />
-            <table border={1}>
+            <table border={1} className='table table-hover'>
                 <thead>
                     <tr>
                         <th>ID</th>
