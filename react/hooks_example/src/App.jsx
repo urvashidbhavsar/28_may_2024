@@ -8,6 +8,11 @@ import Employee from './usestate/Employee'
 import Example1 from './useeffect/Example1'
 import Apicalling from './useeffect/Apicalling'
 import Countex from './useeffect/Countex'
+import Referenceex1 from './useRef/Referenceex1'
+import Videoplay from './useRef/Videoplay'
+import Component1 from './useContext/Component1'
+import Componentex from './useContext/Componentex'
+import Themesetup from './useContext/Themesetup'
 
 function App() {
 
@@ -18,7 +23,12 @@ function App() {
       {/* <Example3_user /> */}
       {/* <Employee /> */}
       {/* <Apicalling /> */}
-      <Countex />
+      {/* <Countex /> */}
+      {/* <Referenceex1 /> */}
+      {/* <Videoplay /> */}
+      {/* <Component1 /> */}
+      {/* <Componentex /> */}
+      <Themesetup />
     </>
   )
 }
