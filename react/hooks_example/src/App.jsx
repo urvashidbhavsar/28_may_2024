@@ -13,6 +13,11 @@ import Videoplay from './useRef/Videoplay'
 import Component1 from './useContext/Component1'
 import Componentex from './useContext/Componentex'
 import Themesetup from './useContext/Themesetup'
+import Arithmetic from './useReducer/Arithmetic'
+import Numbercount from './useMemo/Numbercount'
+import Numbercounting from './usecallback/Numbercounting'
+import Mathtask from './Mathtask'
+import Callapi from './Customhook/Callapi'
 
 function App() {
 
@@ -28,7 +33,12 @@ function App() {
       {/* <Videoplay /> */}
       {/* <Component1 /> */}
       {/* <Componentex /> */}
-      <Themesetup />
+      {/* <Themesetup /> */}
+      {/* <Arithmetic /> */}
+      {/* <Numbercount /> */}
+      {/* <Numbercounting />*/}
+      {/* <Mathtask />*/}
+      <Callapi />
     </>
   )
 }
