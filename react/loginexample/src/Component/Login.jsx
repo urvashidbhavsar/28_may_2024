@@ -1,7 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
+    const navigate = useNavigate()
+    const [getval, setGetval] = useState({
+        username: "",
+        password: "",
+    })
+    const handleChange = (e) => {
+        setGetval({ ...getval, [e.target.name]: e.target.value })
+    }
+    const loginsuccess = (e) => {
+        e.preventDefault()
+        let getdata = JSON.parse(localStorage.getItem("alluser"))
+        let user = getdata.find(items => items.username === getval.username && items.password === getval.password)
+        if (user) {
+            localStorage.setItem("loginuser", getval.username)
+            navigate("/Home")
+        } else {
+            alert("Invalid username and password")
+        }
+    }
+
     return (
         <>
             <div className="container">
@@ -9,14 +29,14 @@ const Login = () => {
                     <h2>User Login</h2>
                     <div className="row g-2">
                         <div className="col-12">
-                            <input type="email" name="" id="" placeholder='Email' required className='form-control' />
+                            <input type="text" name="username" value={getval.username} placeholder='Username' required className='form-control' onChange={handleChange} />
                         </div>
                         <div className="col-12">
-                            <input type="password" name="" id=""
-                                placeholder='Password' required className='form-control' />
+                            <input type="password" name="password" value={getval.password}
+                                placeholder='Password' required className='form-control' onChange={handleChange} />
                         </div>
                         <div className='col-12'>
-                            <button className='btn btn-primary'>Login</button>
+                            <button className='btn btn-primary' onClick={loginsuccess}>Login</button>
                         </div>
                         <div className="col-12">
                             <p>
