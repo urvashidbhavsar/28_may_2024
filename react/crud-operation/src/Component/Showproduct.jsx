@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation'
 
-const Home = () => {
+const Showproduct = () => {
     return (
         <>
             <Navigation />
@@ -9,4 +9,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Showproduct

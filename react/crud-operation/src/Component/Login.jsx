@@ -36,10 +36,10 @@ const Login = () => {
                     <h2>Login</h2>
                     <div className="row g-3">
                         <div className="col-12">
-                            <input type="text" placeholder='Username' className='form-control' required onChange={handlechange} name="username" id="email" value={input.username} />
+                            <input type="text" placeholder='Username' className='form-control' required onChange={handlechange} name="username" value={input.username} />
                         </div>
                         <div className="col-12">
-                            <input type="text" placeholder='Password' className='form-control' required onChange={handlechange} name="password" value={input.password} id="password" />
+                            <input type="text" placeholder='Password' className='form-control' required onChange={handlechange} name="password" value={input.password} />
                         </div>
                         <div className='col-12'>
                             <button className='btn btn-primary'>Login</button>

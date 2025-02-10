@@ -16,7 +16,6 @@ function App() {
           <Route path='/Home' element={<Loginservice />}>
             <Route path='/Home' element={<Home />} ></Route>
           </Route>
-
         </Routes>
       </Router >
       {/* <Registration /> */}
