@@ -31,11 +31,23 @@ const Productpage = () => {
         }
         setInput(updatedata)
     }
-    const handleprosubmit = () => {
+    const handleprosubmit = (e) => {
+        e.preventDefault()
         let getdata = JSON.parse(localStorage.getItem("productdata")) || []
         getdata.push(input)
         localStorage.setItem("productdata", JSON.stringify(getdata))
         alert("Data added successfully")
+
+        setInput({
+            id: "",
+            category: "",
+            title: "",
+            description: "",
+            oldprice: "",
+            rate: "",
+            newprice: "",
+            image: "",
+        })
     }
 
 
