@@ -4,7 +4,7 @@
       "id": "1",
       "ename": "Pawan Patil",
       "designation": "Manager",
-      "doj": "25-01-2024",
+      "doj": "2025-02-13",
       "salary": 45000,
       "city": "Surat",
       "profile": "https://img.freepik.com/free-vector/user-blue-gradient_78370-4692.jpg?semt=ais_hybrid"
@@ -13,7 +13,7 @@
       "id": "2",
       "ename": "Richa Patel",
       "designation": "Software Developer",
-      "doj": "01-12-2024",
+      "doj": "2025-01-31",
       "salary": 30000,
       "city": "Baroda",
       "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJryFTSQUV8Zuu_EGw2iUCpMbIIKWHBl2eQ&s"
@@ -35,15 +35,6 @@
       "salary": "20000",
       "city": "Bharuch",
       "profile": "https://cdn-icons-png.flaticon.com/512/149/149071.png"
-    },
-    {
-      "id": "5",
-      "ename": "Gita Joshi",
-      "designation": "Superwiser",
-      "doj": "2025-01-30",
-      "salary": "50000",
-      "city": "Surat",
-      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJryFTSQUV8Zuu_EGw2iUCpMbIIKWHBl2eQ&s"
     }
   ]
 }
