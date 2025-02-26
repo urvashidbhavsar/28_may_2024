@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import List from './List'
 
 const AddData = ({ fetchdata }) => {
-    const des = ["Software Developer", "Manager", "Worker", "Superwiser", "Peon"]
-    const city = ["Surat", "Baroda", "Vapi", "Bharuch", "Valsad", "Navsari"]
+    // const des = ["Software Developer", "Manager", "Worker", "Superwiser", "Peon"]
+    // const city = ["Surat", "Baroda", "Vapi", "Bharuch", "Valsad", "Navsari"]
+    const { des, city } = List()
+
     const [input, setInput] = useState({
         id: "",
         ename: "",

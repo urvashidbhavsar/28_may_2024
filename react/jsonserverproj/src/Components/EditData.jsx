@@ -3,8 +3,7 @@ import List from './List'
 
 const EditData = ({ edit, editdata, fetchdata }) => {
     // const [edit,editdata] = useState()
-    const des = ["Software Developer", "Manager", "Worker", "Superwiser", "Peon"]
-    const city = ["Surat", "Baroda", "Vapi", "Bharuch", "Valsad", "Navsari"]
+    const { des, city } = List()
 
     const handlechange = (e) => {
         editdata({ ...edit, [e.target.name]: e.target.value })
