@@ -34,11 +34,11 @@ function App() {
       {/* <Component1 /> */}
       {/* <Componentex /> */}
       {/* <Themesetup /> */}
-      {/* <Arithmetic /> */}
+      <Arithmetic />
       {/* <Numbercount /> */}
       {/* <Numbercounting />*/}
       {/* <Mathtask />*/}
-      <Callapi />
+      {/* <Callapi /> */}
     </>
   )
 }
