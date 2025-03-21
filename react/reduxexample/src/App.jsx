@@ -1,19 +1,24 @@
 import React from 'react'
 import Addtodo from './Pages/Addtodo'
-import Showtodo from './Pages/Showtodo'
-import { Provider } from 'react-redux'
-import { store } from './store/store'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Employeedata from './Pages/Employeedata'
+// import { Provider } from 'react-redux'
+// import { store } from './store/store'
 
 const App = () => {
   return (
     <>
-      {/* <Provider store={store}>
-        <Addtodo />
-        <Showtodo />
-      </Provider> */}
+      <Router>
+        <ul className='list-unstyled d-flex gap-3 justify-content-center py-4'>
+          <li><Link to="/addtodo">Add Todo</Link></li>
+          <li><Link to="/employee">Employee</Link></li>
+        </ul>
 
-      <Addtodo />
-      <Showtodo />
+        <Routes>
+          <Route path="/addtodo" element={<Addtodo />} />
+          <Route path='/employee' element={<Employeedata />} />
+        </Routes>
+      </Router>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { addTodo } from '../Feature/todoSlice'
 import { useDispatch } from 'react-redux';
+import Showtodo from './Showtodo';
 
 const Addtodo = () => {
     const [input, setInput] = useState("");
@@ -25,6 +26,8 @@ const Addtodo = () => {
                     </div>
                 </div>
             </div>
+
+            <Showtodo />
         </div>
     )
 }
