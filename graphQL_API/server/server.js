@@ -17,9 +17,9 @@ const typeDefs = `
         createUser(name:String!, salary: Int!) : User
     }
     type User{
-        id:ID
-        name:String
-        salary:Int
+        id: ID!
+        name: String!
+        salary: Int!
     }
 `;
 
@@ -32,7 +32,7 @@ const resolvers = {
         }
     },
     Mutation: {
-        createUser: (args) => {
+        createUser: async (parent, args) => {
             const { name, salary } = args;
             const newUser = {
                 id: users.length + 1,
