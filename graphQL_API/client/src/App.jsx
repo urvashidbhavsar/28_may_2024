@@ -11,7 +11,6 @@ query GetUsers{
   }
 }`;
 
-
 const CREATE_USER = gql`
   mutation CreateUser($name:String!, $salary:Int!){
   createUser(name:$name, salary:$salary) {
