@@ -3,7 +3,7 @@ import { gql, useMutation, useQuery } from '@apollo/client'
 
 // copy query from graphql server
 const GET_USER = gql`
-  query GetUsers{
+  query GetUsers {
     getUser {
       id
       name
@@ -13,12 +13,14 @@ const GET_USER = gql`
 `;
 
 const CREATE_USER = gql`
- mutation CreateUser($name:String!, $salary:Int!){
-  createUser(name:$name, salary:$salary) {
+  mutation CreateUser($name: String!, $salary: Int!) {
+    createUser(name: $name, salary: $salary) {
       name
       salary
+    }
   }
-}`;
+`;
+
 
 const App = () => {
   const [newuser, setNewuser] = useState({
@@ -30,9 +32,9 @@ const App = () => {
     const { name, value } = e.target;
     setNewuser({
       ...newuser,
-      [name]: name === "salary" ? Number(value) : value, // Convert salary to number
+      [name]: name === "salary" ? Number(value) || "" : value, // Prevent NaN issues
     });
-  }
+  };
 
   const { data: getuser, error: getusererr, loading: getuserload } = useQuery(GET_USER)
 
@@ -52,7 +54,7 @@ const App = () => {
       variables: { name: newuser.name, salary: Number(newuser.salary) },
       refetchQueries: [{ query: GET_USER }]
     });
-
+    setNewuser({ name: "", salary: "" });
   }
 
   return (
