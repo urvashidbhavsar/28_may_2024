@@ -6,7 +6,6 @@ const nav = () => {
         { path: "/", pathname: "Home" },
         { path: "/about", pathname: "About" },
         { path: "/contact", pathname: "Contact" },
-
     ]
     return (
         <>
